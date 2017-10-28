@@ -196,6 +196,8 @@ Run the app, mapping your machine's port 4000 to the container's published port
 docker run -p 4000:80 friendlyhello
 ```
 
+> **Note**: When executing docker via Docker Quickstart Terminal on Windows you will have to replace `localhost:` with the address first given to when starting the docker terminal ie `http://192.168.x.x:4000`
+
 You should see a notice that Python is serving your app at `http://0.0.0.0:80`.
 But that message is coming from inside the container, which doesn't know you
 mapped port 80 of that container to 4000, making the correct URL
